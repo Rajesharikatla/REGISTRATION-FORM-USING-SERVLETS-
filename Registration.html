@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('form').submit(function(){
+        alert("Form submitted successfully!");
+    });
+});
+</script>
+</head>
+<body>
+    <form method="get" action="RegisteredData">
+        Enter your first_name : <input type="text" name="firstname"> <br><br>
+        Enter your last_name : <input type="text" name="lastname"> <br><br>
+        Enter your password : <input type="password" name="password"> <br><br>
+        Enter your E_mail  :<input type="email" name="email"> <br> <br>
+        Enter your Gender  :  <input type="radio" name="gender" value="male">male  <input type="radio" name="gender" value="female"> female <input type="radio" name="gender" value="other">other <br><br>
+        <input type="submit">  <input type="reset">
+    </form>
+</body>
+</html>
